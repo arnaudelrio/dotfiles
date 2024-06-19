@@ -4,20 +4,25 @@
     "height": 24, // Waybar height
     // "width": 1366, // Waybar width
     // Choose the order of the modules
-    "modules-left": ["sway/workspaces", "sway/mode", "custom/spotify"],
-    "modules-center": ["sway/window"],
+    "modules-left": ["custom/arch", "hyprland/workspaces", "sway/mode", "custom/spotify"],
+    "modules-center": ["hyprland/window"],
     "modules-right": ["pulseaudio", "network", "cpu", "memory", "battery", "tray", "clock"],
-    "sway/workspaces": {
+    "custom/arch": {
+      "format": "  ",
+      "tooltip": false,
+      "on-click": "sh $HOME/.config/rofi/bin/powermenu"
+    },
+    "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": false,
         "format": "{icon}",
         "format-icons": {
-            "1:web": "",
+            "1:web": "🌐",
             "2:code": "",
             "3:term": "",
             "4:work": "",
             "5:music": "",
-            "6:docs": "",
+            "6:docs": "📖",
             "urgent": "",
             "focused": "",
             "default": ""
@@ -71,7 +76,7 @@
             "car": "",
             "default": ["", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "exec kitty pacmixer"
     },
     "custom/spotify": {
         "format": " {}",
