@@ -3,4 +3,5 @@ neofetch
 # Created by `pipx` on 2024-06-08 17:25:26
 export PATH="$PATH:/home/Al4st0r/.local/bin"
 
-#export DISPLAY =: 1
+export GTK_USE_PORTAL=1
+export XDG_CURRENT_DESKTOP=hyprland
