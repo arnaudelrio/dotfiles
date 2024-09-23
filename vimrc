@@ -9,3 +9,8 @@ set number relativenumber
 
 " Status bar
 set laststatus=2
+
+" Tab indent with 4 spaces
+set tabstop=4
+set shiftwidth=4
+set expandtab
