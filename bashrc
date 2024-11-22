@@ -7,7 +7,7 @@ alias SPARK='. ~/SPARK/startSPARK.sh'
 
 alias zed=zeditor
 alias vim=nvim
-alias sagemath="jupyter notebook"
+alias sagemath="jupyter lab"
 
 export DOTNET_ROOT=$HOME/.dotnet
 export JAVA_HOME="/usr/lib/jvm/java-23-openjdk"
