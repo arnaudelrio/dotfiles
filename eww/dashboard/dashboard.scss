@@ -1,0 +1,344 @@
+/** General **/
+.dashboard {
+    background-color: #0f0f17;
+    border-radius: 16px;
+    padding: 10px;
+    padding: 0px 10px 0px 10px;
+}
+.module {
+    margin: 0px 0px 0px 0px;
+    border-radius: 10px 10px 0px 10px;
+}
+
+.applications {
+    background-color: $background;
+    color: $foreground;
+    border-radius: 12px;
+    margin: 0.5rem;
+    padding: 1rem;
+}
+.app-firefox,
+.app-reddit,
+.app-telegram,
+.app-github,
+.app-code,
+.app-discord,
+.app-spotify {
+    padding: 1rem;
+}
+.app-firefox,
+.app-discord {
+    font-family: "Font Awesome 5 Free";
+    font-size: 2.9em;
+}
+.app-discord {
+    font-size: 2.6em;
+}
+.app-code,
+.app-reddit,
+.app-telegram,
+.app-github,
+.app-spotify {
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 2.9em;
+}
+.app-code {
+    font-size: 3.1em;
+}
+.app-spotify {
+    font-size: 3.4em;
+}
+
+.time {
+    background-color: $background;
+    color: $foreground;
+    margin: 0.5rem;
+    padding: 0 8.6rem 0 8.6rem;
+    border-radius: 12px;
+}
+.hour,
+.min,
+.separator-clock {
+    padding: 1rem 0 0 0;
+    font-family: Comic Mono;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+.separator-clock {
+    margin-top: -5px;
+}
+.day {
+    padding: 0.5rem;
+    font-family: Comic Mono;
+    font-size: 1.2em;
+}
+
+.music-player {
+    background-color: $background;
+    padding: 0 1.5rem 1rem 1.5rem;
+    border-radius: 12px;
+    margin: 0.5rem;
+}
+.album_art {
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    margin: 2rem 1rem 1.5rem 1rem;
+    padding: 7rem;
+}
+
+.artist {
+    font-family: Cartograph CF;
+    font-style: italic;
+    font-weight: bold;
+    color: $foreground;
+    font-size: 1.2em;
+}
+.song {
+    font-family: Cartograph CF;
+    font-style: italic;
+    font-size: 1.1em;
+    color: $foreground;
+    margin-top: -5px;
+}
+.btn_prev,
+.btn_play,
+.btn_next {
+    font-family: JetBrainsMono Nerd Font;
+}
+.btn_prev {
+    color: $foreground;
+    font-size: 2.8em;
+}
+.btn_play {
+    color: $foreground;
+    font-size: 2.8em;
+    font-weight: bold;
+}
+.btn_next {
+    color: $foreground;
+    font-size: 2.8em;
+}
+.metric-player scale trough highlight {
+    all: unset;
+    border-radius: 10px;
+    background-color: $foreground;
+}
+
+.metric-player scale trough {
+    all: unset;
+    background-color: $background;
+    border: 2px solid $foreground;
+    border-radius: 50px;
+}
+
+.metric-player scale trough {
+    min-width: 200px;
+    min-height: 10px;
+    // margin: .5rem 1rem 0 1rem;
+}
+
+.profile {
+    background-color: $background;
+    border-radius: 12px;
+    margin: 0.5rem;
+    padding: 3.1rem;
+}
+.pfp {
+    background-image: url("assets/profile.png");
+    background-repeat: no-repeat;
+    background-size: 15rem;
+    background-position: center;
+    min-height: 200px;
+    min-width: 200px;
+    border-radius: 50%;
+}
+.pfptxt {
+    margin-top: 30px;
+    color: $foreground;
+    font-family: Cartograph CF;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+}
+.subpfptxt {
+    color: $foreground;
+    font-family: Comic Mono;
+    margin-top: 10px;
+    font-size: 23px;
+}
+
+.quote {
+    background-color: $background;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 0.5rem;
+}
+.quote-text {
+    font-family: Comic Mono;
+    padding: 2.4rem 0.5rem 1rem 0.5rem;
+    font-size: 1.2em;
+    color: $foreground;
+}
+.quote-author {
+    font-family: Cartograph CF;
+    font-style: italic;
+    font-size: 1.4em;
+    color: $foreground;
+    margin-top: 1.7rem;
+}
+
+.systray-circular {
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 2em;
+}
+.radial-ram-box,
+.radial-bat-box,
+.radial-volume-box,
+.radial-brightness-box {
+    font-family: "Font Awesome 5 Pro";
+    background-color: $background;
+    padding: 1.5rem 2.3rem 1.5rem 2.3rem;
+    margin: 0.5rem;
+    border-radius: 2rem 0;
+}
+.brightness-radial,
+.volume-radial,
+.bat-radial,
+.ram-radial {
+    background-color: $background-alt2;
+}
+.brightness-radial-label,
+.volume-radial-label,
+.bat-radial-label,
+.ram-radial-label {
+    padding: 2.5rem;
+}
+.brightness-radial {
+    color: $yellow;
+}
+.volume-radial {
+    color: $magenta;
+}
+.bat-radial {
+    color: $green;
+}
+.ram-radial {
+    color: $blue;
+}
+
+.task {
+    background-color: $background;
+    color: $foreground;
+    border-radius: 12px;
+    padding: 1.9rem;
+    margin: 0.5rem;
+    .task-list {
+        margin: 0 0 0 2.5rem;
+    }
+}
+
+.appointment {
+    padding: 0 1rem 1rem 0;
+}
+.appointment-label {
+    font-family: Comic Mono;
+    font-size: 1.3em;
+}
+.appointment-text,
+.appointment-text-time {
+    font-family: Cartograph CF;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.task-list-box {
+    padding: 0 1rem 1rem 0;
+}
+.tasklabel {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 1.5em;
+}
+.tasklabel-mem {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 1.6em;
+}
+.tasklabel-todo,
+.tasklabel-time {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.todo,
+.uptime {
+    font-family: Cartograph CF;
+    font-style: italic;
+    font-size: 1em;
+}
+.mem-usage,
+.disk-usage {
+    font-family: Cartograph CF;
+    font-style: italic;
+    font-size: 1em;
+}
+
+.powermenu {
+    margin-left: 1rem;
+    .poweroff,
+    .reboot,
+    .close {
+        font-family: "Font Awesome 5 Pro";
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+    .reboot {
+        font-size: 1.5em;
+    }
+    .close {
+        font-weight: normal;
+        font-size: 2.1em;
+    }
+    .lock {
+        font-family: "feather";
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+    .exit {
+        font-family: "Font Awesome 5 Pro";
+        font-size: 1.8em;
+        font-weight: bold;
+    }
+}
+
+.weather {
+    font-family: JetBrainsMono Nerd Font;
+    background-color: $background-alt2;
+    border-radius: 12px;
+    padding: 2rem;
+}
+.weather-day {
+    font-family: Comic Mono;
+    font-weight: bold;
+    font-size: 1.6em;
+    color: $foreground;
+}
+.temp-region {
+    font-family: Comic Mono;
+    font-size: 1em;
+    color: $foreground;
+}
+.weather-icon {
+    font-size: 4.2em;
+}
+.temperature {
+    font-family: Iosevka Medium;
+    font-size: 1em;
+    color: $foreground;
+}
+.weather-stat {
+    font-family: Cartograph CF;
+    font-style: italic;
+    font-size: 1.1em;
+    color: $foreground;
+}

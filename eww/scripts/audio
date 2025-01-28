@@ -1,0 +1,27 @@
+#!/bin/bash
+
+volume=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{if (substr($2,1,1) == 1) {print substr($2,1,1)substr($2,3,2)} else {if(substr($2,3,1) == 0) {print substr($2,4,1)} else print substr($2,3,2)}}')
+mute=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print $3}')
+
+if [[ $mute == "[MUTED]" ]]; then
+    icon=""
+    col="#575268"
+elif [[ $volume -ge 50 ]]; then
+    icon=""
+    col="#a1bdce"
+else
+    icon=""
+    col="#a1bdce"
+fi
+
+if [[ "$1" == "--VOL" ]]; then
+    echo "$volume"
+elif [[ "$1" == "--ICON" ]]; then
+    echo "$icon"
+elif [[ "$1" == "--COL" ]]; then
+    echo "$col"
+elif [[ "$1" == "--SET" ]]; then
+    wpctl set-volume @DEFAULT_AUDIO_SINK@ $2
+elif [[ "$1" == "--MUTE" ]]; then
+    wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+fi
