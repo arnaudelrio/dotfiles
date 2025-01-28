@@ -45,7 +45,6 @@ window#waybar {
 #network,
 #pulseaudio,
 #custom-spotify,
-#tray,
 #mode {
     padding: 0 3px;
     margin: 0 2px;
@@ -102,7 +101,4 @@ window#waybar {
 }
 
 #brightness {
-}
-
-#tray {
 }
