@@ -1,7 +1,7 @@
-neofetch
+fastfetch
 
 # Aliases
-alias SPARK='. ~/SPARK/startSPARK.sh'
+alias SPARK='. ~/Backdoor/SPARK/startSPARK.sh'
 alias mosquitux='~/Backdoor/Mosquitux/startMosquitux.sh'
 alias sagemath='bash ~/sage/startSage.sh'
 
@@ -18,3 +18,4 @@ export PATH="$PATH:~/1Password/ssh/agent.toml"
 
 export GTK_USE_PORTAL=1
 export XDG_CURRENT_DESKTOP=hyprland
+export PATH="/opt/brew/bin:$PATH"

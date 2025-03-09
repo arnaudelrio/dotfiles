@@ -54,7 +54,7 @@
 (defwidget wifi []
     (eventbox :onhover "${eww} update wifi_rev=true"
         :onhoverlost "${eww} update wifi_rev=false"
-        (box :vexpand "false" :hexpand "false" :space-evenly "false"
+    (box :vexpand "false" :hexpand "false" :space-evenly "false"
 		  (button :class "module-wifi" :onclick "exec kitty nmcli device wifi list &" :wrap "false" :limit-width 12 :style "color: ${COL_WLAN};" WLAN_ICON)
 	(revealer :transition "slideright"
 			  :reveal wifi_rev
@@ -67,7 +67,7 @@
 
 
 (defwidget workspaces []
-  (literal :content workspace))
+    (literal :content workspace))
 
 
 (defwidget bat []
