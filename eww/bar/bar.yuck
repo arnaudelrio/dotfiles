@@ -49,7 +49,8 @@
                 :duration "350ms"
         (box :class "shutdown_box" :orientation "h" :space-evenly "false" :hexpand "false" :vexpand "false"
         (button :class "shutdown_btn" :onclick "reboot" "")
-        (button :class "shutdown_btn" :onclick "systemctl suspend" ""))))))
+        (button :class "shutdown_btn" :onclick "systemctl suspend" "")
+        (button :class "chage_background" :timeout "10s" :onclick "bash ~/dotfiles/hypr/backgroundChange.sh" ""))))))
 
 (defwidget wifi []
     (eventbox :onhover "${eww} update wifi_rev=true"
