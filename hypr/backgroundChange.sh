@@ -1,6 +1,8 @@
 #!/bin/bash
 
-hyprpaper &
+if ! pgrep -x hyprpaper &> /dev/null; then
+    hyprpaper & disown
+fi
 
 while ! hyprctl hyprpaper status &> /dev/null; do
     sleep 0.1
