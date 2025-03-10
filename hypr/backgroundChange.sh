@@ -1,3 +1,11 @@
+#!/bin/bash
+
+hyprpaper &
+
+while ! hyprctl hyprpaper status &> /dev/null; do
+    sleep 0.1
+done
+
 directory="/home/Al4st0r/dotfiles/hypr/BackgroundImages/"
 monitor=`hyprctl monitors | grep Monitor | awk '{print $2}'`
 
