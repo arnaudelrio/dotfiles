@@ -5,38 +5,40 @@ These dotfiles have been tailor specifically to my needs and may cause trouble i
 
 Below, I'm going to present a list of apps and screenshots for you to see whether or not this configuration is the one you're looking for or not.
 
-Note that I'm usually inclined for console-apps and/or vim related key-bindings (in fact, I usually use extensions or plugins that allow me to use these same key-bindings in other apps such as VSCode or Obsidian).
+Note that I'm usually inclined for console-apps and/or vim related key-bindings (in fact, I usually use extensions or plugins that allow me to use these same key-bindings in other apps such as Zed or Obsidian).
 
 ## Most important apps
 * Package manager: pacman
 * Terminal: kitty
-* Editor: vim (still setting up nvim)
-* IDE: VSCode
-* Browser: Pending for a decision
+* Fetch: Fastfetch
+* Screenshotting: Hyprshot
+* Session manager: Wlogout
+* Resource monitor: Htop
+* Login Manager: Tuigreetd (greetd)
+* Dotfiles: dotfiles
+* App launcher: Tofi
+* Status Bar: eww
+* Widgets and dashboard: eww
+* Notification daemon: Dunst
+* Main file editor: NeoVim (I do most programming here too lately)
+* IDE: Zed (sometimes, when I need to use the copilot chat or multibuffer)
+* Browser: Firefox (for now)
 * Note-taking: Obsidian (The dotfiles are in another repository, which is private, for now)
 * PDF Reader: Zathura (with mupdf)
-* Local AI: Pieces for Developers
-* Password manager: 1Password
-* File manager: Thunar and Vifm (still debating)
+* File manager: Vifm (and Thunar if GUI is needed)
+* Video player: MPV
 * Art: Krita
 * Image editing: GIMP
 * Music reproduction: YouTube Music
 * Music editing: MuseScore 4
-* Screenshotting: Hyprshot
-* Status Bar: Waybar
 * Background: Hyprpaper
 * Audio manager: Pacmixer
 * Math software system: SageMath (with Jupyter Notebook)
-* Session manager: Wlogout
 * 3D Software: Blender
-* Fetch: Neofetch
-* Matrix effect: cmatrix
-* Notification daemon: Dunst
-* Login Manager: Tuigreetd (greetd)
-* Dotfiles: dotfiles
-* App launcher: Wofi
+* Password manager: 1Password
+* LaTeX: `pdflatex` (neovim for editing and MikTex as a package manager)
 * Messenger: Discord and telegram
-* LaTeX: Pending (temporarily, I'm using Overleaf since transfering from TeXstudio in Windows 11 isn't quite viable)
+* Matrix effect: cmatrix
 
 TODO: Add links to the corresponding web pages and divide them into categories/importance.
 
