@@ -1,7 +1,8 @@
 (defvar eww "eww -c .")
 
+(include "./variables.yuck")
+
 (include "./bar/bar.yuck")
 
 (include "./dashboard/dashboard.yuck")
 
-(include "./variables.yuck")

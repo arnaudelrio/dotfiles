@@ -9,9 +9,9 @@ MUSIC_DIR="$HOME/Music"
 ## Get status
 get_status() {
 	if [[ $STATUS == "Playing" ]]; then
-	   echo "\\u23f8"
+	   echo true
 	else
-	   echo "\\u23f5"
+	   echo false
 	fi
 }
 

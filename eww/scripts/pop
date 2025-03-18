@@ -11,8 +11,8 @@ run() {
 
 # Open widgets
 if [[ ! -f "$LOCK_FILE" ]]; then
-    #$EWW -c . close system music_win audio_ctl
-    #touch "$LOCK_FILE"
+    $EWW -c . close system music_win audio_ctl
+    touch "$LOCK_FILE"
     run && echo "ok good!"
 else
     $EWW -c . close calendar
