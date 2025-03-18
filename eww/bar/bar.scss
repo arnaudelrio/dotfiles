@@ -1,5 +1,4 @@
-/** EWW.SCSS
-Created by saimoom **/
+/** EWW.SCSS **/
 * {
     all: unset;
     font-family: feather;
@@ -9,12 +8,8 @@ Created by saimoom **/
 /** General **/
 .bar_class {
     background-color: #0f0f17;
-    border-radius: 16px;
+    border-radius: 0px 0px 16px 16px;
     padding: 0px 10px 0px 10px;
-}
-.module {
-    margin: 0px 0px 0px 0px;
-    border-radius: 10px 10px 0px 10px;
 }
 
 /** tooltip!! **/
@@ -38,16 +33,22 @@ tooltip label {
     color: #e4c9af;
 }
 
+.clock {
+  font-size: 13px;
+  color: #bfc9db;
+}
+.clock_hour {
+  font-weight: bold;
+}
 .clock_time_sep {
-    font-size: 13px;
+  font-size: 13px;
     color: #bfc9db;
-    margin: 0px 0px 1px 0px;
 }
 .clock_time_class,
 .clock_minute_class {
     font-size: 13px;
 }
-.clock_date_class {
+.clock_date {
     font-size: 13px;
     margin: 0px 0px 0px 10px;
     color: #d7beda;
@@ -166,26 +167,6 @@ scale trough {
     margin: 5px 0px 0px 10px;
     background-color: #0f0f17;
 }
-
-/*.0, .01, .02, .03, .04, .05, .06,
-.011, .022, .033, .044, .055, .066 {
-    margin: 0px 10px 0px 0px;
-}*/
-
-/* Unoccupied */
-//.0 {
-//    color: #3e424f;
-//}
-
-/* Occupied */
-/*.01, .02, .03, .04, .05, .06 {
-    color: #bfc9db;
-}*/
-
-/* Focused */
-/*.011, .022, .033, .044, .055, .066 {
-    color: #a1bdce;
-}*/
 
 .song_cover_art {
     background-size: cover;

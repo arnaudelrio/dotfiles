@@ -24,9 +24,9 @@
             (box :class "song_cover_art" :vexpand "false" :hexpand "false" :style "background-image: url('./images/music.png');")
             (button :class "song" :wrap "true" :onclick "~/.config/eww/scripts/pop music" song)
             (revealer :transition "slideright" :reveal music_reveal :duration "350ms"
-                (box :vexpand "false" :hexpand "false" :oreintation "h"
+                (box :vexpand "false" :hexpand "false" :orientation "h"
                     (button :class "song_btn_prev" :onclick "~/.config/eww/scripts/music_info --prev" "")
-                    (button :class "song_btn_play" :onclick "~/.config/eww/scripts/music_info --toggle" song_status)
+                    (button :class "song_btn_play" :onclick "~/.config/eww/scripts/music_info --toggle" {"${song_status}" ? "P" : ""})
                     (button :class "song_btn_next" :onclick "~/.config/eww/scripts/music_info --next" ""))))))
 
 (defwidget bright []
@@ -62,12 +62,12 @@
 
 (defwidget clock_module []
     (eventbox :onhover "${eww} update time_rev=true" :onhoverlost "${eww} update time_rev=false"
-        (box :class "module" :space-evenly "false" :orientation "h" :spacing "3"
-            (label :text clock_hour :class "clock_time_class")
-            (label :text ":" :class "clock_hour_sep")
-            (label :text clock_minute :class "clock_minute_class")
+        (box :space-evenly "false" :orientation "h" :spacing "3"
+            (label :text clock_hour :class "clock clock_hour")
+            (label :text ":" :class "clock")
+            (label :text clock_minute :class "clock")
             (revealer :transition "slideleft" :reveal time_rev :duration "350ms"
-                (button :class "clock_date_class" :onclick "~/.config/eww/scripts/pop calendar" clock_date)))))
+                (button :class "clock_date" :onclick "~/.config/eww/scripts/pop calendar" clock_date)))))
 
 (defwidget right []
     (box :orientation "h" :space-evenly false :halign "start" :class "right_modules"
@@ -166,7 +166,8 @@
                 (button :class "music_btn_play" :onclick "~/.config/eww/scripts/music_info --toggle" song_status)
                 (button :class "music_btn_next" :onclick "~/.config/eww/scripts/music_info --next" ""))
             (box :class "music_bar" :halign "center" :vexpand "false" :hexpand "false" :space-evenly "false"
-                (scale :onscroll "mpc -q seek {}" :min 0 :active "true" :max 100 :value current_status)))))
+                ;;(scale :onscroll "mpc -q seek {}" :min 0 :active "true" :max 100 :value current_status)
+            ))))
 
 ;; music
 (defwindow music_win :stacking "fg" :focusable "false" :screen 1 :monitor 0
