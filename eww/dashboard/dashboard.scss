@@ -53,14 +53,14 @@
     background-color: $background;
     color: $foreground;
     margin: 0.5rem;
-    padding: 0 8.6rem 0 8.6rem;
+    padding: 0 7rem 0 7rem;
     border-radius: 12px;
 }
 .hour,
 .min,
 .separator-clock {
     padding: 1rem 0 0 0;
-    font-family: Comic Mono;
+    //font-family: Comic Mono;
     font-weight: bold;
     font-size: 2.5em;
 }
