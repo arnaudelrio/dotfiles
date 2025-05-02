@@ -5,8 +5,10 @@
 (deflisten workspace "~/.config/eww/scripts/workspace")
 
 ;; Profile Variables
-(defpoll NAME  :interval "5m" "hostname")
-(defpoll UNAME :interval "5m" "whoami")
+(defpoll NAME :interval "5m" "whoami")
+(defvar UNAME "@arnau.delrio")
+(defvar pfp-img "./images/profile_picture.jpg")
+(defpoll PATH :interval "5m" "pwd")
 
 ;; Systray Variables
 (defpoll ram-usage          :interval "1s" "~/.config/eww/dashboard/scripts/sys_info --mem")
