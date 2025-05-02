@@ -6,9 +6,9 @@
 (defwidget profile []
     (box :orientation "v" :space-evenly "false" :class "profile"
         (box :orientation "h" :space-evenly "false"
-            (box :class "pfp"))
+            (box :class "pfp" :style "background-image: url('${pfp-img}');"))
         (box :orientation "v" :space-evenly "false"
-            (box :class "pfptxt" :valign "center" {NAME})
+            (box :class "pfptxt" :halign "center" {NAME})
             (box :class "subpfptxt" :halign "center" {UNAME}))))
 
 ;; Quotes Widgets

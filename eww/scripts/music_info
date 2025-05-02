@@ -4,7 +4,6 @@
 ## Get data
 STATUS="$(playerctl status)"
 COVER="./images/music.jpg"
-MUSIC_DIR="$HOME/Music"
 
 ## Get status
 get_status() {
