@@ -23,4 +23,3 @@ export PATH="$PATH:/home/Al4st0r/.pub-cache/bin"
 
 export GTK_USE_PORTAL=1
 export XDG_CURRENT_DESKTOP=hyprland
-export PATH="/opt/brew/bin:$PATH"
